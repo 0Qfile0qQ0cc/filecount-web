@@ -1,9 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "filecount",
+  "name": "filecountweb",
   "main": ".open-next/worker.js",
   "compatibility_date": "2024-12-30",
-  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
   "build": {
     "command": "pnpm exec opennextjs-cloudflare build"
   },
@@ -14,7 +17,7 @@
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "filecount"
+      "service": "filecountweb"
     }
   ]
 }
