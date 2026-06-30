@@ -6,7 +6,7 @@
   //   Build command:    pnpm run build
   //   Deploy command:   npx wrangler deploy
   //   Output directory: (leave empty — Workers uses main + assets below, not a Pages output dir)
-  "name": "filecount-web",
+  "name": "filecount1",
   "main": ".open-next/worker.js",
   "compatibility_date": "2024-12-30",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
