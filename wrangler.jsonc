@@ -1,12 +1,15 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
+  // OpenNext Cloudflare Workers — https://opennext.js.org/cloudflare/get-started
+  //
+  // Cloudflare Workers Builds (dashboard):
+  //   Build command:    pnpm run build
+  //   Deploy command:   npx wrangler deploy
+  //   Output directory: (leave empty — Workers uses main + assets below, not a Pages output dir)
   "name": "filecount-web",
   "main": ".open-next/worker.js",
   "compatibility_date": "2024-12-30",
-  "compatibility_flags": [
-    "nodejs_compat",
-    "global_fetch_strictly_public"
-  ],
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
 
   "observability": {
     "enabled": false
@@ -14,6 +17,16 @@
 
   "build": {
     "command": "pnpm exec opennextjs-cloudflare build"
+  },
+
+  // Force Next.js NextServer into minimal mode inside the Worker.
+  // OpenNext runs middleware as an external edge function, so the in-server
+  // middleware manifest is not needed. Without minimal mode, NextServer calls
+  // require(".next/server/middleware-manifest.json"), an unsupported dynamic
+  // require on Cloudflare Workers, which returns HTTP 500 on every route.
+  // See https://opennext.js.org/cloudflare and opennextjs-cloudflare issue #1232.
+  "vars": {
+    "NEXT_PRIVATE_MINIMAL_MODE": "1"
   },
 
   "assets": {
