@@ -1,0 +1,1 @@
+export { EnterprisePlatformsPage } from "./EnterprisePlatformsPage";

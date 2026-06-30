@@ -1,0 +1,127 @@
+{
+  "common": {
+    "appName": "FileCount"
+  },
+  "metadata": {
+    "title": "FileCount | Enterprise Technology Consulting",
+    "description": "Enterprise technology consulting, digital transformation advisory and platform strategy for organizations in Saudi Arabia. Vendor-neutral technology assessment, vendor selection and implementation oversight."
+  },
+  "header": {
+    "nav": {
+      "home": "Home",
+      "solutions": "Solutions",
+      "about": "About Us",
+      "knowledgeCenter": "FileCount Knowledge",
+      "careers": "Careers"
+    },
+    "solutions": {
+      "menuDescription": "Enterprise software solutions designed for modern businesses.",
+      "platformDevelopment": {
+        "title": "Platform Development",
+        "description": "Build secure and scalable custom platforms tailored to your business."
+      },
+      "digitalTransformation": {
+        "title": "Digital Transformation",
+        "description": "Transform business operations through modern digital solutions."
+      },
+      "itConsulting": {
+        "title": "Technology Consulting",
+        "description": "Independent technology consulting to help organizations evaluate, select and implement the right digital solutions."
+      }
+    },
+    "cta": "Talk to an Expert",
+    "logoLabel": "FileCount home",
+    "primaryNavLabel": "Primary navigation",
+    "solutionsMenuLabel": "Solutions menu",
+    "languageSwitcher": {
+      "label": "Select language",
+      "english": "English",
+      "arabic": "العربية"
+    },
+    "mobileMenu": {
+      "open": "Open navigation menu",
+      "close": "Close navigation menu",
+      "label": "Mobile navigation"
+    }
+  },
+  "hero": {
+    "eyebrow": "Enterprise Digital Platforms & Solutions",
+    "headline": "Not Every Platform Fits Every Business.",
+    "description": "We start by understanding your business needs, then select the right platform, tailor it to your requirements, and integrate it with your existing systems—so it works the way your business operates, not the other way around.",
+    "primaryCta": "Talk to an Expert",
+    "secondaryCta": "Explore Solutions",
+    "illustrationLabel": "Symmetric enterprise platform architecture with eight connected systems orbiting a central integration hub"
+  },
+  "whyFileCount": {
+    "title": "Why FileCount?",
+    "description": "We don't start by selling software. We begin by understanding your business needs, then help you select, customize and integrate the right platform to support your operations today and scale with your future growth.",
+    "cards": {
+      "understand": {
+        "title": "Understand Your Needs",
+        "description": "We analyze your business requirements before recommending any platform."
+      },
+      "select": {
+        "title": "Select the Right Platform",
+        "description": "We recommend the platform that best fits your organization."
+      },
+      "customize": {
+        "title": "Customize & Integrate",
+        "description": "We tailor the platform and integrate it with your existing systems."
+      },
+      "grow": {
+        "title": "Grow With Your Business",
+        "description": "Your platform evolves as your organization grows."
+      }
+    }
+  },
+  "sectorsWeEmpower": {
+    "title": "Sectors We Empower",
+    "description": "Our solutions are designed to support organizations across diverse industries by selecting, customizing and integrating the right enterprise platforms to improve operational efficiency, accelerate digital transformation and enable sustainable growth.",
+    "sectors": [
+      "Government",
+      "Government Authorities",
+      "Ministries",
+      "Public Sector",
+      "Municipalities",
+      "Healthcare",
+      "Hospitals",
+      "Medical Centers",
+      "Pharmaceutical",
+      "Banking",
+      "Financial Services",
+      "Insurance",
+      "Education",
+      "Universities",
+      "Schools",
+      "Training Centers",
+      "Manufacturing",
+      "Industrial",
+      "Energy",
+      "Utilities",
+      "Oil & Gas",
+      "Telecommunications",
+      "Retail",
+      "E-Commerce",
+      "Logistics",
+      "Transportation",
+      "Ports",
+      "Airports",
+      "Construction",
+      "Real Estate",
+      "Engineering",
+      "Hospitality",
+      "Tourism",
+      "Agriculture",
+      "Food & Beverage",
+      "Media",
+      "Non-Profit",
+      "Foundations",
+      "Holding Companies",
+      "SMEs",
+      "Enterprise",
+      "Technology Companies",
+      "Research Centers",
+      "Innovation Centers"
+    ]
+  }
+}

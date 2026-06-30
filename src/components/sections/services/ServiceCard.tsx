@@ -1,0 +1,66 @@
+import type { ElementType } from "react";
+
+import { Link } from "@/lib/i18n/navigation";
+import { HOME_CARD_TOKENS } from "@/components/sections/shared/home-card-tokens";
+import { cn } from "@/lib/utils";
+
+type ServiceCardProps = {
+  icon: ElementType;
+  title: string;
+  description: string;
+  href: string;
+};
+
+export function ServiceCard({
+  icon: Icon,
+  title,
+  description,
+  href,
+}: ServiceCardProps) {
+  return (
+    <Link
+      href={href}
+      className={cn(
+        "why-filecount-card group relative flex h-full w-full max-w-[350px] flex-col justify-center overflow-hidden border bg-[var(--header-background)]",
+      )}
+      style={{
+        height: HOME_CARD_TOKENS.height,
+        paddingInline: HOME_CARD_TOKENS.paddingInline,
+        paddingBlock: HOME_CARD_TOKENS.paddingBlock,
+        borderColor: HOME_CARD_TOKENS.border,
+        borderRadius: HOME_CARD_TOKENS.radius,
+      }}
+    >
+      <span className="glass-sweep-overlay" aria-hidden="true" />
+
+      <span
+        className="relative z-[1] inline-flex shrink-0 items-center justify-center rounded-lg border border-[var(--header-border)] bg-[var(--site-background)] text-[var(--nav-color)]"
+        style={{
+          width: HOME_CARD_TOKENS.iconSize,
+          height: HOME_CARD_TOKENS.iconSize,
+          marginBottom: HOME_CARD_TOKENS.iconMarginBottom,
+        }}
+        aria-hidden="true"
+      >
+        <Icon size={16} strokeWidth={1.75} />
+      </span>
+
+      <h3
+        className="relative z-[1] text-[length:var(--nav-font-size)] leading-snug text-[var(--nav-color)]"
+        style={{ fontWeight: HOME_CARD_TOKENS.titleFontWeight }}
+      >
+        {title}
+      </h3>
+
+      <p
+        className="relative z-[1] text-[13px] leading-[1.4] text-[var(--nav-color)] opacity-90"
+        style={{
+          marginTop: HOME_CARD_TOKENS.titleDescriptionGap,
+          fontWeight: HOME_CARD_TOKENS.descriptionFontWeight,
+        }}
+      >
+        {description}
+      </p>
+    </Link>
+  );
+}
